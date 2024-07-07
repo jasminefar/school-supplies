@@ -1,0 +1,124 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f8ff;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.desk {
+    position: relative;
+    width: 700px;
+    height: 500px;
+    background-color: #deb887;
+    border: 5px solid #8b4513;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.notebook {
+    position: absolute;
+    top: 50px;
+    left: 50px;
+    width: 200px;
+    height: 300px;
+    background-color: #ffffff;
+    border: 1.3px solid #000000;
+    border-radius: 5px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    padding: 10px;
+}
+
+.notebook .cover {
+    width: 100%;
+    height: 40px;
+    background-color: #4682b4;
+    border-radius: 5px 5px 0 0;
+}
+
+.notebook .lines {
+    width: 100%;
+    height: 3.5px;
+    background-color: #ccccca;
+    margin: 12px 0;
+}
+
+.pencil {
+    position: absolute;
+    width: 8px;
+    height: 120px;
+    background-color: #ffa500;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+#pencil1 {
+    top: 110px;
+    left: 300px;
+    transform: rotate(10deg);
+}
+
+#pencil2 {
+    top: 200px;
+    left: 350px;
+    transform: rotate(-15deg);
+}
+
+.pencil::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: -2px;
+    width: 12px;
+    height: 20px;
+    background-color: #ffdb58;
+    border-radius: 0 0 4px 4px;
+}
+
+.pencil::after {
+    content: '';
+    position: absolute;
+    bottom: -8px;
+    left: -2px;
+    width: 12px;
+    height: 10px;
+    background-color: #d2691e;
+    border-radius: 0 0 4px 4px;
+}
+
+.eraser {
+    position: absolute;
+    top: 300px;
+    left: 200px;
+    width: 50px;
+    height: 30px;
+    background-color: #ff69b4;
+    border: 2px solid #ff1493;
+    border-radius: 5px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.ruler {
+    position: absolute;
+    top: 350px;
+    left: 400px;
+    width: 200px;
+    height: 24px;
+    background-color: #f5deb3;
+    border: 2px solid #d2b48c;
+    border-radius: 3px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.ruler::before {
+    content: '';
+    position: absolute;
+    width: 2px;
+    height: 100%;
+    background-color: #d2b48c;
+    top: 0;
+    left: 20px;
+    box-shadow: 20px 0 0 0 #d2b48c, 40px 0 0 0 #d2b48c, 60px 0 0 0 #d2b48c, 80px 0 0 0 #d2b48c, 100px 0 0 0 #d2b48c, 120px 0 0 0 #d2b48c, 140px 0 0 0 #d2b48c, 160px 0 0 0 #d2b48c, 180px 0 0 0 #d2b48c;
+}
